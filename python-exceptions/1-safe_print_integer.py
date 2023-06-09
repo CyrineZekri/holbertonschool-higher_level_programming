@@ -1,12 +1,8 @@
 #!/usr/bin/python3
-def safe_print_list(my_list=[], x=0):
-    c = 0
+def safe_print_integer(value):
     try:
-        for i in range(x):
-            print("{}".format(my_list[i]), end="")
-            c = c + 1
+        print("{:d}".format(value))
+        B = True
     except:
-        pass
-    finally:
-        print()
-    return(c)
+        B = False
+    return(B)
