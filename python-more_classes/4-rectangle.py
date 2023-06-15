@@ -45,10 +45,14 @@ class Rectangle:
     def __str__(self):
         if self.__width == 0 or self.__height == 0:
             return ""
-        returned = ""
         for i in range(self.__height):
-            print("#"*self.__width)
-        return (returned)
+            for j in range(1, self.__width):
+                print("#", end="")
+            if i == self.__height - 1:
+                print("#", end='')
+            else:
+                print("#")
+        return ("")
 
     def __repr__(self):
         return f"Rectangle({self.__width},{self.__height})"
