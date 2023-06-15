@@ -47,5 +47,5 @@ class Rectangle:
             return ""
         returned = ""
         for i in range(self.__height):
-            print("#"*self.__width+"\n")
+            print("#"*self.__width)
         return (returned)
