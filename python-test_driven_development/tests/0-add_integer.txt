@@ -98,3 +98,10 @@ test case 17:
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
+
+
+test case 18: 
+>>> add_integer("Nan","ha")
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
