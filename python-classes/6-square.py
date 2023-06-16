@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-""" Class Definition"""
+"""Define an square with size class and functions"""
 
 
 class Square:
-    """Defines a class square"""
+    """Define a private attribute"""
     __size = None
     __position = None
 
@@ -31,8 +31,13 @@ class Square:
     def my_print(self):
         if self.__size == 0:
             print()
-        else:
-            for _ in range(self.__position[1]):
-                print()
-            for _ in range(self.__size):
-                print(" " * self.__position[0] + "#" * self.__size)
+        for i in range(1, self.__size ** 2 + 1):
+            if i == 1:
+                for j in range(self.__position[0]):
+                    print(" ", end="")
+            if i % self.__size == 0:
+                print("#")
+                for j in range(self.__position[0]):
+                    print(" ", end="")
+            else:
+                print("#", end="")
