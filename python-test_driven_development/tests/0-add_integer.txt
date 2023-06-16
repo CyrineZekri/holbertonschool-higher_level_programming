@@ -1,0 +1,61 @@
+The ``0-add_integer.py`` module
+======================
+
+Using ``add_integer``
+-------------------
+>>> add_integer = __import__('0-add_integer').add_integer
+
+
+test case 1: 
+>>> add_integer(a=-1,b=98)
+97
+
+
+test case 2: 
+>>> add_integer(a=1,b=-1)
+0
+
+
+test case 3: 
+>>> add_integer(a="ha",b=98)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
+
+
+
+test case 4: 
+>>> add_integer(a=1,b="ha")
+Traceback (most recent call last):
+...
+TypeError: b must be an integer
+
+
+test case 5: 
+>>> add_integer(a=1.1,b=98)
+99
+
+
+test case 6: 
+>>> add_integer(a=1,b=1.1)
+2
+
+
+test case 7: 
+>>> add_integer(a=1,b=True)
+2
+
+
+test case 8: 
+>>> add_integer(a=1,b=False)
+1
+
+
+test case 9: 
+>>> add_integer(a=True,b=98)
+99
+
+
+test case 10: 
+>>> add_integer(a=False,b=98)
+98
