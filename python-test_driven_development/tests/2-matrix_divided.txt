@@ -1,0 +1,74 @@
+The ``2-matrix_divided.py`` module
+======================
+
+Using ``matrix_divided``
+-------------------
+>>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+
+Test Case :
+>>> matrix_divided([[1, 2], [1, 2]], 4) 
+[[0.25, 0.5], [0.25, 0.5]]
+
+
+Test Case:
+>>> matrix_divided([[1, 2], [1, 2]], "string") 
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+Test Case:
+>>> matrix_divided([[1, 2], [1, 2]], 0) 
+Traceback (most recent call last):
+...
+ZeroDivisionError: division by zero
+
+
+Test Case:
+>>> matrix_divided([["a", 20], ["a", "b"]], 1)
+Traceback (most recent call last):
+....
+TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+
+Test Case:
+>>> matrix_divided([[1, 2, 3], [1, 2]], 2)
+Traceback (most recent call last):
+...
+TypeError: Each row of the matrix must have the same size
+
+Test:
+>>> matrix_divided([[1, 2], [3, 4]], float(aaaaa))
+Traceback (most recent call last):
+...
+NameError: name 'aaaaa' is not defined
+
+
+Test:
+>>> matrix_divided([[1, 2], [3, float(aaaaaa)]],4)
+Traceback (most recent call last):
+...
+NameError: name 'aaaaaa' is not defined
+
+
+Test:
+>>> matrix_divided(,4)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
+
+
+>>> matrix_divided([[1, 2], [3, float('nan')]], 4)
+[[0.25, 0.5], [0.75, nan]]
+
+
+>>> matrix_divided([[2, 5], [8, float(aaaaa)]], float("hellllll"))
+Traceback (most recent call last):
+...
+NameError: name 'aaaaa' is not defined
+
+
+>>> matrix_divided(,)
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
