@@ -62,7 +62,39 @@ test case 10:
 
 test case 11: 
 >>> add_integer(a=1.1,b=-98)
+-97
 
 
-test case 10: 
->>> add_integer(a=Nan,b=98)
+test case 12: 
+>>> add_integer(a=-1,b=98.1)
+97
+
+
+
+test case 13: 
+>>> add_integer(a=1.1,b=98.1)
+99
+
+
+test case 14: 
+>>> add_integer(a=-1,b=-98)
+-99
+
+
+test case 15: 
+>>> add_integer(5,)
+103
+
+
+test case 16: 
+>>> add_integer()
+Traceback (most recent call last):
+...
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+
+test case 17: 
+>>> add_integer("Nan",)
+Traceback (most recent call last):
+...
+TypeError: a must be an integer
