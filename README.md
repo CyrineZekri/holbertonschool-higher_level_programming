@@ -1,8 +1,7 @@
 # holbertonschool-higher_level_programming
 
 This repository contains projects and exercises related to higher-level programming concepts in Python.
-It is part of my coursework at Holberton School Tunisia ![Holberton School Logo](https://www.google.com/search?sxsrf=APwXEdcwVixDbydltgIYtUG03V2mZmsu7g:1687011481161&q=holberton&tbm=isch&sa=X&ved=2ahUKEwj-8sPAv8r_AhVaaqQEHU5oCgwQ0pQJegQICRAB&biw=1536&bih=714&dpr=1.25#imgrc=_ywpnsXCs12hLM)
-
+It is part of my coursework at Holberton School Tunisia
 ## Sub-repositories
 
 The "holbertonschool-higher_level_programming" project is organized into several sub-repositories, each focusing on a specific topic or concept. Here are the sub-repositories included in this project:
