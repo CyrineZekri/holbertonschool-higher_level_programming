@@ -63,3 +63,7 @@ In addition to the examples, the project provides an exercise to practice creati
 ## Contributing
 
 Contributions to the project are always welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+
+## Author 
+
+Made with Love by: Cyrine Zekri :heart:
