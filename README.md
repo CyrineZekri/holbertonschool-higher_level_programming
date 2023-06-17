@@ -22,4 +22,4 @@ Each sub-repository contains its own set of exercises and examples related to th
 Contributions to the project are always welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
 ## Author 
-This project was created by: Cyrine Zekri :heart:
+Made with Love by: Cyrine Zekri :heart:
