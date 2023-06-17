@@ -1,7 +1,7 @@
 # holbertonschool-higher_level_programming
 
 This repository contains projects and exercises related to higher-level programming concepts in Python.
-It is part of my coursework at Holberton School.
+It is part of my coursework at Holberton School Tunisia :seahorse: .
 
 ## Sub-repositories
 
@@ -19,6 +19,7 @@ The "holbertonschool-higher_level_programming" project is organized into several
 
 Each sub-repository contains its own set of exercises and examples related to the respective topic. You can navigate to each sub-repository for more details and to access the specific code and documentation.
 
-## Contributing
+### Author
+This project is created by [Cyrine Zekri].
 
-Contributions to the project are always welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
+If you have any questions or suggestions regarding this project, please feel free to reach out to me.
