@@ -18,8 +18,8 @@ The "holbertonschool-higher_level_programming" project is organized into several
 
 Each sub-repository contains its own set of exercises and examples related to the respective topic. You can navigate to each sub-repository for more details and to access the specific code and documentation.
 
-### Contributing
+## Contributing
 Contributions to the project are always welcome. If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-### Author 
+## Author 
 This project was created by: Cyrine Zekri :heart:
