@@ -1,5 +1,15 @@
 #!/usr/bin/python3
+"""
+
+Module that provides a function to divide a matrix by an int
+
+"""
+
+
 def matrix_divided(matrix, div):
+    """
+    function that divides a matrix elements by a nbr 
+    """
     if not isinstance(matrix, list) or not all(isinstance(row, list) for row in matrix):
         raise TypeError(
             "matrix must be a matrix (list of lists) of integers/floats")
