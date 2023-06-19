@@ -38,3 +38,9 @@ TypeError: text must be a string
 
 >>> text_indentation("hello world string")
 hello world string
+
+
+>>> text_indentation([THIS IS A LIST])
+Traceback (most recent call last):
+...
+SyntaxError: invalid syntax
