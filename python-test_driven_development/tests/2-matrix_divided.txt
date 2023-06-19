@@ -72,3 +72,9 @@ NameError: name 'aaaaa' is not defined
 Traceback (most recent call last):
 ...
 SyntaxError: invalid syntax
+
+
+>>> matrix_divided([[1, 2, 3], [1, 2]],none)
+Traceback (most recent call last):
+...
+NameError: name 'none' is not defined
