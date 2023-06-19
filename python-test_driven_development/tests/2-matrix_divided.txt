@@ -78,3 +78,7 @@ SyntaxError: invalid syntax
 Traceback (most recent call last):
 ...
 NameError: name 'none' is not defined
+
+
+>>> matrix_divided([[]],2)
+[[]]
