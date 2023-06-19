@@ -1,96 +1,55 @@
-The ``2-matrix_divided.py`` module
+The ``2-matrix_divided`` module
 ======================
 
 Using ``matrix_divided``
 -------------------
+
 >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
 
+>>> matrix = [
+...     [1, 2, 3],
+...     [4, 5, 6]
+... ]
 
-Test Case :
->>> matrix_divided([[1, 2], [1, 2]], 4) 
-[[0.25, 0.5], [0.25, 0.5]]
-
-
-Test Case:
->>> matrix_divided([[1, 2], [1, 2]], "string") 
+**Division by None**
+>>> print(matrix_divided(matrix, None))
 Traceback (most recent call last):
 ...
 TypeError: div must be a number
 
-Test Case:
->>> matrix_divided([[1, 2], [1, 2]], 0) 
+**Division by string**
+>>> print(matrix_divided(matrix, 'str'))
+Traceback (most recent call last):
+...
+TypeError: div must be a number
+
+**ZeroDivision**
+>>> print(matrix_divided(matrix, 0))
 Traceback (most recent call last):
 ...
 ZeroDivisionError: division by zero
 
-
-Test Case:
->>> matrix_divided([["a", 20], ["a", "b"]], 1)
+**No div input**
+>>> print(matrix_divided(matrix, ))
 Traceback (most recent call last):
-....
+...
+TypeError: matrix_divided() missing 1 required positional argument: 'div'
+
+**None matrix**
+>>> print(matrix_divided(None, 3))
+Traceback (most recent call last):
+...
 TypeError: matrix must be a matrix (list of lists) of integers/floats
 
 
-Test Case:
->>> matrix_divided([[1, 2, 3], [1, 2]], 2)
+**Inconsistent row sizes in matrix**
+>>> _matrix = [[1, 2, 3], [4, 5]]
+>>> print(matrix_divided(_matrix, 3))
 Traceback (most recent call last):
 ...
 TypeError: Each row of the matrix must have the same size
 
-Test:
->>> matrix_divided([[1, 2], [3, 4]], float(aaaaa))
-Traceback (most recent call last):
-...
-NameError: name 'aaaaa' is not defined
-
-
-Test:
->>> matrix_divided([[1, 2], [3, float(aaaaaa)]],4)
-Traceback (most recent call last):
-...
-NameError: name 'aaaaaa' is not defined
-
-
-Test:
->>> matrix_divided(,4)
-Traceback (most recent call last):
-...
-SyntaxError: invalid syntax
-
-
->>> matrix_divided([[1, 2], [3, float('nan')]], 4)
-[[0.25, 0.5], [0.75, nan]]
-
-
->>> matrix_divided([[2, 5], [8, float(aaaaa)]], float("hellllll"))
-Traceback (most recent call last):
-...
-NameError: name 'aaaaa' is not defined
-
-
->>> matrix_divided(,)
-Traceback (most recent call last):
-...
-SyntaxError: invalid syntax
-
-
->>> matrix_divided([[1, 2, 3], [1, 2]],none)
-Traceback (most recent call last):
-...
-NameError: name 'none' is not defined
-
-
->>> matrix_divided([[]],2)
+**Empty matrix**
+>>> _matrix = [[]]
+>>> print(matrix_divided(_matrix, 3))
 [[]]
-
-
->>> matrix_divided(None,2)
-Traceback (most recent call last):
-...
-TypeError: matrix must be a matrix (list of lists) of integers/floats
-
-
->>> matrix_divided([[1, 2, 3], [1, 2]],)
-Traceback (most recent call last):
-...
-TypeError: matrix_divided() missing 1 required positional argument: 'div'
