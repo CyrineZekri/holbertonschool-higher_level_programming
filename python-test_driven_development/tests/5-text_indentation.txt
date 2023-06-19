@@ -38,3 +38,11 @@ TypeError: text must be a string
 
 >>> text_indentation("hello world string")
 hello world string
+
+
+>>> text_indentation("? : .")
+?
+<BLANKLINE>
+:
+<BLANKLINE>
+.
