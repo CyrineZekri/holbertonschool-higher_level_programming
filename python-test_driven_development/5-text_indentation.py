@@ -1,10 +1,10 @@
 #!/usr/bin/python3
 """
-
-module that contains the function : text_indentation
-
-
-
+module
+that
+contains
+the function : 
+text_indentation
 """
 
 
