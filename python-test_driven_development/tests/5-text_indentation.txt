@@ -44,3 +44,21 @@ hello world string
 Traceback (most recent call last):
 ...
 SyntaxError: invalid syntax
+
+
+>>> text_indentation("dot.colon:question mark?word")
+dot.
+<BLANKLINE>
+colon:
+<BLANKLINE>
+question mark?
+<BLANKLINE>
+word
+
+
+>>> text_indentation(".?:")
+.
+<BLANKLINE>
+?
+<BLANKLINE>
+:
