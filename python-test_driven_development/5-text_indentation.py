@@ -3,7 +3,7 @@
 module
 that
 contains
-the function : 
+the function :
 text_indentation
 """
 
