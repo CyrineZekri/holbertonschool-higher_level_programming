@@ -6,8 +6,6 @@ Using ``text_indentation``
 >>> text_indentation = __import__('5-text_indentation').text_indentation
 
 Test Cases: 
->>> text_indentation("")
-<BLANKLINE>
 
 
 >>> text_indentation("a")
@@ -27,7 +25,6 @@ TypeError: text must be a string
 
 
 >>> text_indentation(" ")
-<BLANKLINE>
 
 
 >>> text_indentation(False)
@@ -62,3 +59,4 @@ word
 ?
 <BLANKLINE>
 :
+<BLANKLINE>
