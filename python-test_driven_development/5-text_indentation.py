@@ -8,15 +8,19 @@ module that contains the function : text_indentation
 
 def text_indentation(text):
     """
-    indents text after special characters
+    indents after special characters
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-    text = text.strip()
-    characters = ['.', '?', ':']
-    returned = ""
-    for i, char in enumerate(text):
-        returned += char
-        if char in characters and i < len(text)-1:
-            returned += "\n\n"
-    print(returned)
+   
+    tmp = text.replace(".", ".\n\n")
+    tmp = tmp.replace(":", ":\n\n")
+    tmp = tmp.replace("?", "?\n\n")
+    p = tmp.splitlines(True)
+    ls_strip = []
+    for l in p:
+        if l == "\n":
+            ls_strip.append("\n")
+        else:
+            ls_strip.append(l.lstrip())
+    print("".join(ls_strip), end="")
