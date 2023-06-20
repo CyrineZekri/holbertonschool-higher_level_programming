@@ -12,7 +12,7 @@ def text_indentation(text):
     """
     if not isinstance(text, str):
         raise TypeError("text must be a string")
-   
+
     tmp = text.replace(".", ".\n\n")
     tmp = tmp.replace(":", ":\n\n")
     tmp = tmp.replace("?", "?\n\n")
