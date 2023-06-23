@@ -22,5 +22,5 @@ def text_indentation(text):
         if line == "\n":
             ls_strip.append("\n")
         else:
-            ls_strip.append(l.lstrip())
+            ls_strip.append(line.lstrip())
     print("".join(ls_strip), end="")
