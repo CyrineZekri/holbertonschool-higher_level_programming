@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-Module that provides a function to divide a matrix by an int.
+Module that divides a matrix by an int.sssss
 
 """
 
@@ -34,7 +34,7 @@ def matrix_divided(matrix, div):
         for element in row:
             if not isinstance(element, (int, float)):
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats")
+                    "matrix must be a matrix of integers/floats")
             divided_row.append(round(element / div, 2))
         divided_matrix.append(divided_row)
 
