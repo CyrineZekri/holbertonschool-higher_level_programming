@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 
-Module that provides a function to divide a matrix by an int
+Module that provides a function to divide a matrix by an int.
 
 """
 
