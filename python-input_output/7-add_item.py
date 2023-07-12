@@ -15,7 +15,7 @@ try:
     list = load_from_json_file(file)
 
 except FileNotFoundError:
-    my_list = []
+    list = []
 for arg in args:
-    my_list.append(arg)
+    list.append(arg)
 save_to_json_file(list, file)
