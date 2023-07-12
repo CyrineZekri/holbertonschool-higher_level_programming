@@ -10,13 +10,13 @@ if __name__ == "__main__":
         '6-load_from_json_file').load_from_json_file
 
     file = "add_item.json"
-    arg = sys.argv[1:]
+    args = sys.argv[1:]
 
     try:
         list = load_from_json_file(file)
 
     except FileNotFoundError:
         my_list = []
-
-    my_list.extend(arg)
+    for arg in args:
+        my_list.append(arg)
     save_to_json_file(list, file)
