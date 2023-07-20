@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" 
-geometry basics module 
+"""
+geometry basics module
 """
 
 Rectangle = __import__('9-rectangle').Rectangle
@@ -12,8 +12,8 @@ class Square(Rectangle):
     """
 
     def __init__(self, size):
-        """ 
-        intialize square 
+        """
+        intialize square
         """
 
         self.integer_validator("size", size)
