@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""module that creates a triangle repr"""
+
+
 def pascal_triangle(n):
     if n <= 0:
         return []
