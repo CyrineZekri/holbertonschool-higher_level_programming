@@ -21,4 +21,4 @@ class Square(Rectangle):
         """
         method to calculate the area
         """
-        return self.__size**2
+        return self.__size * self.__size
