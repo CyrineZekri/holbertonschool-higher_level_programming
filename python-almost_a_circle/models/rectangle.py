@@ -69,3 +69,7 @@ class Rectangle(Base):
     def display(self):
         """method that represents a square using #"""
         print(('#' * self.__width + '\n') * self.__height, end='')
+
+    def __str__(self):
+        """The print method"""
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
