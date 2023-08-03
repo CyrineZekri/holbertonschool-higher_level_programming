@@ -75,3 +75,8 @@ class Rectangle(Base):
         """The print method"""
         return f"[Rectangle] \
 ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}"
+
+    def update(self, *args):
+        """method that adds arguments"""
+        for arg in args:
+            setattr()
