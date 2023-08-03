@@ -67,8 +67,9 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """method that represents a square using #"""
-        print(('#' * self.__width + '\n') * self.__height, end='')
+        """method that represents a square using x and y for spaces """
+        print('\n'*self.y, end='')
+        print((''*self.x+'#' * self.__width + '\n') * self.__height, end='')
 
     def __str__(self):
         """The print method"""
