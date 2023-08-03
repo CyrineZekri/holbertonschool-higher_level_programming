@@ -68,5 +68,4 @@ class Rectangle(Base):
 
     def display(self):
         """method that represents a square using #"""
-        for i in self.__height:
-            print("#" * self.__width)
+        print(('#' * self.__width + '\n') * self.__height, end='')
