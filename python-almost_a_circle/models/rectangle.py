@@ -96,8 +96,7 @@ class Rectangle(Base):
 
     def to_dictionary(self):
         """To dictionary method"""
-        return {
-            'x': self.x,
-            'y': self.y,
-            'id': self.id,
-            'width': self.width}
+        dic = {'x': self.x, 'y': self.y}
+        dic['id'] = self.id
+        dic['size'] = self.width
+        return (dic)
