@@ -35,3 +35,10 @@ class Base:
                 list_instances.append(inst_dic)
             final = cls.to_json_string(list_instances)
             f.write(final)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """reloads the list of dictionaries from a file"""
+        if json_string is None or json_string == "":
+            return []
+        return json.loads(json_string)
