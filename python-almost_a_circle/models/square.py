@@ -28,4 +28,18 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """the update method"""
-        super().update()
+        if args:
+            arguments = len(args)
+            if arguments >= 1:
+                self.id = args[0]
+            if arguments >= 2:
+                self.width = args[1]
+            if arguments >= 3:
+                self.height = args[2]
+            if arguments >= 4:
+                self.x = args[3]
+            if arguments >= 5:
+                self.y = args[4]
+        if kwargs:
+            for key, value in kwargs.items():
+                setattr(self, key, value)
