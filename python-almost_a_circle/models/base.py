@@ -51,11 +51,13 @@ class Base:
             x = cls(1)
             x.update(**dictionary)
             return x
+
     @classmethod
     def create(cls, **dictionary):
+        """method that creates classes"""
         if cls.__name__ == "Rectangle":
             x = cls(1, 1)
         else:
             x = cls(1)
         x.update(**dictionary)
-        return(x)
+        return (x)
