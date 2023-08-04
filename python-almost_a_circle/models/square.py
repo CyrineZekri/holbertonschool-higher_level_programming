@@ -25,3 +25,7 @@ class Square(Rectangle):
     def __str__(self):
         """representation method"""
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}"
+
+    def update(self, *args, **kwargs):
+        """the update method"""
+        super().update()
